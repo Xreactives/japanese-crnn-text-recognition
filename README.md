@@ -25,7 +25,7 @@ The model uses a modified Convolutional Recurrent Neural Network (CRNN) designed
 ---
 
 ## Project Structure
-
+```
 japanese-crnn-text-recognition/
 ├── data/                         # Generated vocab and training samples
 ├── samples/                      # Inference sample image files
@@ -43,6 +43,7 @@ japanese-crnn-text-recognition/
 ├── requirements.txt              # Project dependencies
 ├── train.py                      # CRNN training script with CTC loss and validation
 └── train_log.txt                 # Training progress log
+```
 ---
 
 ## Getting Started
