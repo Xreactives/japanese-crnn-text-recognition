@@ -109,9 +109,3 @@ python design.py
 * Capture Window: Draggable translucent capture area with real-time text binarization controls (White/Dark text toggle).
 * Multi-Engine Translation: Support for Google Translate, Bing, Yandex, DeepL, and Baidu via translators.
 * Query & Result Windows: Separate floating sub-windows for input and translated text monitoring.
-
----
-
-## License
-
-This project is licensed under the MIT License.
