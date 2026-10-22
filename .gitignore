@@ -1,0 +1,21 @@
+# Python / Virtual Environment
+.venv/
+__pycache__/
+
+
+# IDE / Editor Files
+.idea/
+.vscode/
+
+# Datasets & Generated Artifacts
+*.csv
+*.png
+*.pkl
+*.pth
+*.jpg
+data/
+tools/etlcdb-image-extractor/etl_data/
+
+# Logs
+*.log
+train_log.txt
