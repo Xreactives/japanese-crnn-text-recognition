@@ -1,8 +1,3 @@
-Here is the complete, production-ready `README.md` formatted with proper Markdown code fences and including the new `paper/` directory in the project structure.
-
-Save this directly to your root `README.md` file:
-
-
 # Japanese CRNN Text Recognition & On-Screen Translator
 
 An end-to-end Japanese Scene Text Recognition (OCR) pipeline built with PyTorch and trained on the ETL Character Database. The repository includes binary dataset extraction tools, synthetic dataset generators, CRNN training with CTC loss, and a real-time On-Screen Translator desktop application.
