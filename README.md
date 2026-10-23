@@ -3,6 +3,7 @@
 An end-to-end Japanese Scene Text Recognition (OCR) pipeline built with PyTorch and trained on the ETL Character Database. The repository includes binary dataset extraction tools, synthetic dataset generators, CRNN training with CTC loss, and a real-time On-Screen Translator desktop application.
 
 ![On-Screen Translator Demo](samples/demo.png)
+
 *Figure 1: Real-time OCR capture and translation running on a Japanese visual novel screenshot for demonstration purposes.*
 
 ---
