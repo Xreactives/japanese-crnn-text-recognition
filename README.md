@@ -49,34 +49,24 @@ The model uses a modified Convolutional Recurrent Neural Network (CRNN) designed
 # Training progress log
     Epoch [1/100] - Train Loss: 4.7411
     Validation Loss: 0.6428 | CER: 0.0442
-    --> Saved new BEST model to checkpoints\best_crnn.pth (Val Loss: 0.6428)
     Epoch [2/100] - Train Loss: 0.1393
     Validation Loss: 0.0516 | CER: 0.0047
-    --> Saved new BEST model to checkpoints\best_crnn.pth (Val Loss: 0.0516)
     Epoch [3/100] - Train Loss: 0.0324
     Validation Loss: 0.0266 | CER: 0.0040
-    --> Saved new BEST model to checkpoints\best_crnn.pth (Val Loss: 0.0266)
     Epoch [4/100] - Train Loss: 0.0193
     Validation Loss: 0.0225 | CER: 0.0028
-    --> Saved new BEST model to checkpoints\best_crnn.pth (Val Loss: 0.0225)
     Epoch [5/100] - Train Loss: 0.0158
     Validation Loss: 0.0247 | CER: 0.0034
-    Patience: 1/10
     Epoch [6/100] - Train Loss: 0.0116
     Validation Loss: 0.0150 | CER: 0.0019
-    --> Saved new BEST model to checkpoints\best_crnn.pth (Val Loss: 0.0150)
     Epoch [7/100] - Train Loss: 0.0125
     Validation Loss: 0.0191 | CER: 0.0030
-    Patience: 1/10
     Epoch [8/100] - Train Loss: 0.0141
     Validation Loss: 0.0162 | CER: 0.0027
-    Patience: 2/10
     Epoch [9/100] - Train Loss: 0.0119
     Validation Loss: 0.0146 | CER: 0.0024
-    --> Saved new BEST model to checkpoints\best_crnn.pth (Val Loss: 0.0146)
     Epoch [10/100] - Train Loss: 0.0078
     Validation Loss: 0.0151 | CER: 0.0021
-    Patience: 1/10
 
 
 ---
@@ -85,16 +75,15 @@ The model uses a modified Convolutional Recurrent Neural Network (CRNN) designed
 
 ### Prerequisites
 
-- Python 3.10+
+- Python 3.12+
 - CUDA 12.4 compatible GPU (recommended for real-time inference and fast training)
 
 ### Installation
 
 1. Clone the repository:
-   ```bash
-   git clone [https://github.com/Xreactives/japanese-crnn-text-recognition.git](https://github.com/Xreactives/japanese-crnn-text-recognition.git)
-   cd japanese-crnn-text-recognition
-
+```bash
+git clone [https://github.com/Xreactives/japanese-crnn-text-recognition.git](https://github.com/Xreactives/japanese-crnn-text-recognition.git)
+cd japanese-crnn-text-recognition
 ```
 
 2. Create and activate a virtual environment:
@@ -104,14 +93,12 @@ python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 # On Linux/macOS:
 source .venv/bin/activate
-
 ```
 
 
 3. Install dependencies:
 ```bash
 pip install -r requirements.txt
-
 ```
 
 
@@ -125,8 +112,7 @@ pip install -r requirements.txt
 Extract raw ETL binary data into structured PNG image files:
 
 ```bash
-python tools/etlcdb-image-extractor/etl_extractor.py --data_sets 2
-
+python tools/etlcdb-image-extractor/etl_extractor.py
 ```
 
 ### 2. Generate Training Datasets
@@ -136,7 +122,6 @@ Generate horizontal or vertical text line samples along with vocabulary mappings
 ```bash
 python generate_horizontal.py
 python generate_vertical.py
-
 ```
 
 ### 3. Train Model
@@ -145,7 +130,6 @@ Train the CRNN model on the generated dataset:
 
 ```bash
 python train.py
-
 ```
 
 *Trained checkpoints will be saved to `checkpoints/best_crnn.pth`.*
@@ -156,7 +140,6 @@ Predict text from a single line image:
 
 ```bash
 python infer.py --image "samples/test_line.png"
-
 ```
 
 ### 5. Launch On-Screen Translator App
@@ -165,7 +148,6 @@ Run the desktop capture GUI application:
 
 ```bash
 python design.py
-
 ```
 
 ---
